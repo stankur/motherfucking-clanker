@@ -1,7 +1,7 @@
 // render-fetch.js
 import puppeteer from "puppeteer";
 
-async function fetchRenderedHtml(url) {
+async function fetchRendered(url) {
 	const browser = await puppeteer.launch({
 		headless: "new", // or true
 		// executablePath: '/path/to/chrome', // optional, if you want your own Chrome
@@ -16,9 +16,6 @@ async function fetchRenderedHtml(url) {
 		waitUntil: "networkidle0", // or 'domcontentloaded' if site never truly goes idle
 		timeout: 30000,
 	});
-
-	// Optional: wait for a specific element to ensure content loaded
-	// await page.waitForSelector('#main-content');
 
 	// Fast "End" scroll loop to load dynamically appended content
 	let lastHeight = await page.evaluate(
@@ -68,6 +65,11 @@ async function fetchRenderedHtml(url) {
 		`[end-scroll] done: final height=${finalHeight}px, discoveries=${discoveries}`
 	);
 
+	// Normalize all anchors: set attribute href to resolved absolute a.href
+	await page.$$eval("a[href]", (as) => {
+		for (const a of as) a.setAttribute("href", a.href);
+	});
+
 	const html = await page.content();
 
 	await browser.close();
@@ -81,7 +83,7 @@ if (!url) {
 	process.exit(1);
 }
 
-fetchRenderedHtml(url)
+fetchRendered(url)
 	.then((html) => {
 		console.log(html);
 	})
