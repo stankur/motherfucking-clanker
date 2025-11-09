@@ -1,0 +1,126 @@
+0 verbose cli [
+0 verbose cli   '/Users/stanleykurniawan/.nvm/versions/node/v16.14.0/bin/node',
+0 verbose cli   '/Users/stanleykurniawan/.nvm/versions/node/v16.14.0/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   'cheerio@1.0.0-rc.12',
+0 verbose cli   '--cache',
+0 verbose cli   '/Users/stanleykurniawan/render-fetch/replit_scraper/.npm-cache',
+0 verbose cli   '--no-audit',
+0 verbose cli   '--no-fund'
+0 verbose cli ]
+1 info using npm@8.3.1
+2 info using node@v16.14.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/Users/stanleykurniawan/.nvm/versions/node/v16.14.0/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/Users/stanleykurniawan/render-fetch/replit_scraper/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:/Users/stanleykurniawan/.npmrc Completed in 5ms
+12 timing config:load:user Completed in 6ms
+13 timing config:load:file:/Users/stanleykurniawan/.nvm/versions/node/v16.14.0/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 20ms
+19 timing npm:load:configload Completed in 21ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing config:load:flatten Completed in 4ms
+22 timing npm:load:display Completed in 5ms
+23 verbose logfile /Users/stanleykurniawan/render-fetch/replit_scraper/.npm-cache/_logs/2025-11-09T09_26_11_909Z-debug-0.log
+24 timing npm:load:logFile Completed in 8ms
+25 timing npm:load:timers Completed in 0ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 38ms
+28 timing arborist:ctor Completed in 1ms
+29 timing idealTree:init Completed in 96ms
+30 timing idealTree:userRequests Completed in 1ms
+31 silly idealTree buildDeps
+32 silly fetch manifest cheerio@1.0.0-rc.12
+33 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+34 http fetch GET 200 https://registry.npmjs.org/cheerio 50ms (cache hit)
+35 silly placeDep ROOT cheerio@1.0.0-rc.12 REPLACE for: replit_scraper@1.0.0 want: 1.0.0-rc.12
+36 silly fetch manifest htmlparser2@^8.0.1
+37 http fetch GET 200 https://registry.npmjs.org/htmlparser2 9ms (cache hit)
+38 timing idealTree:#root Completed in 79ms
+39 silly placeDep ROOT htmlparser2@8.0.2 OK for: cheerio@1.0.0-rc.12 want: ^8.0.1
+40 timing idealTree:node_modules/cheerio Completed in 6ms
+41 timing idealTree:node_modules/htmlparser2 Completed in 0ms
+42 timing idealTree:buildDeps Completed in 86ms
+43 timing idealTree:fixDepFlags Completed in 2ms
+44 timing idealTree Completed in 187ms
+45 timing reify:loadTrees Completed in 188ms
+46 timing reify:diffTrees Completed in 3ms
+47 silly reify mark retired [
+47 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/cheerio'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/encoding-sniffer'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/htmlparser2'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/iconv-lite'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/undici'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/parse5-parser-stream'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/safer-buffer'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/whatwg-encoding'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/whatwg-mimetype'
+55 silly reify ]
+56 silly reify moves {
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/cheerio': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.cheerio-7eFepVuv',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/encoding-sniffer': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.encoding-sniffer-0p695HGU',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/htmlparser2': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.htmlparser2-RCfCFE6U',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/iconv-lite': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.iconv-lite-Aa7Zgutq',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/undici': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.undici-Lsb0POyK',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/parse5-parser-stream': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.parse5-parser-stream-x0D0tmNI',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/safer-buffer': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.safer-buffer-tQlcjAzf',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/whatwg-encoding': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.whatwg-encoding-O9GbmBOR',
+56 silly reify   '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/whatwg-mimetype': '/Users/stanleykurniawan/render-fetch/replit_scraper/node_modules/.whatwg-mimetype-Me9idFPX'
+56 silly reify }
+57 timing reify:retireShallow Completed in 14ms
+58 timing reify:createSparse Completed in 1ms
+59 timing reify:loadBundles Completed in 0ms
+60 silly tarball no local data for cheerio@https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.12.tgz. Extracting by manifest.
+61 silly tarball no local data for htmlparser2@https://registry.npmjs.org/htmlparser2/-/htmlparser2-8.0.2.tgz. Extracting by manifest.
+62 http fetch GET 200 https://registry.npmjs.org/htmlparser2/-/htmlparser2-8.0.2.tgz 289ms (cache miss)
+63 timing reifyNode:node_modules/htmlparser2 Completed in 299ms
+64 http fetch GET 200 https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.12.tgz 338ms (cache miss)
+65 timing reifyNode:node_modules/cheerio Completed in 345ms
+66 timing reify:unpack Completed in 346ms
+67 timing reify:unretire Completed in 0ms
+68 timing build:queue Completed in 1ms
+69 timing build:deps Completed in 1ms
+70 timing build Completed in 1ms
+71 timing reify:build Completed in 1ms
+72 timing reify:trash Completed in 66ms
+73 timing reify:save Completed in 9ms
+74 timing reify Completed in 634ms
+75 silly REMOVE node_modules/whatwg-mimetype
+76 silly REMOVE node_modules/whatwg-encoding
+77 silly REMOVE node_modules/safer-buffer
+78 silly REMOVE node_modules/parse5-parser-stream
+79 silly REMOVE node_modules/undici
+80 silly REMOVE node_modules/iconv-lite
+81 silly CHANGE node_modules/htmlparser2
+82 silly REMOVE node_modules/htmlparser2/node_modules/entities
+83 silly REMOVE node_modules/encoding-sniffer
+84 silly CHANGE node_modules/cheerio
+85 timing command:install Completed in 637ms
+86 verbose exit 0
+87 timing npm Completed in 837ms
+88 info ok

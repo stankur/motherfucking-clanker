@@ -1,0 +1,197 @@
+[
+  {
+    "title": "DS-STAR: A state-of-the-art versatile data science agent",
+    "url": "https://research.google/blog/ds-star-a-state-of-the-art-versatile-data-science-agent/",
+    "date": "November 6, 2025"
+  },
+  {
+    "title": "MedGemma: Our most capable open models for health AI development",
+    "url": "https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development/",
+    "date": "July 9, 2025"
+  },
+  {
+    "title": "Making group conversations more accessible with sound localization",
+    "url": "https://research.google/blog/making-group-conversations-more-accessible-with-sound-localization/",
+    "date": "July 2, 2025"
+  },
+  {
+    "title": "How we created HOV-specific ETAs in Google Maps",
+    "url": "https://research.google/blog/how-we-created-hov-specific-etas-in-google-maps/",
+    "date": "June 30, 2025"
+  },
+  {
+    "title": "REGEN: Empowering personalized recommendations with natural language",
+    "url": "https://research.google/blog/regen-empowering-personalized-recommendations-with-natural-language/",
+    "date": "June 27, 2025"
+  },
+  {
+    "title": "MUVERA: Making multi-vector retrieval as fast as single-vector search",
+    "url": "https://research.google/blog/muvera-making-multi-vector-retrieval-as-fast-as-single-vector-search/",
+    "date": "June 25, 2025"
+  },
+  {
+    "title": "From research to climate resilience",
+    "url": "https://research.google/blog/how-ai-is-helping-us-build-a-more-resilient-planet/",
+    "date": "June 24, 2025"
+  },
+  {
+    "title": "Unlocking rich genetic insights through multimodal AI with M-REGLE",
+    "url": "https://research.google/blog/unlocking-rich-genetic-insights-through-multimodal-ai-with-m-regle/",
+    "date": "June 23, 2025"
+  },
+  {
+    "title": "A colorful quantum future",
+    "url": "https://research.google/blog/a-colorful-quantum-future/",
+    "date": "June 23, 2025"
+  },
+  {
+    "title": "Optimizing LLM-based trip planning",
+    "url": "https://research.google/blog/optimizing-llm-based-trip-planning/",
+    "date": "June 6, 2025"
+  },
+  {
+    "title": "Zooming in: Efficient regional environmental risk assessment with generative AI",
+    "url": "https://research.google/blog/zooming-in-efficient-regional-environmental-risk-assessment-with-generative-ai/",
+    "date": "June 5, 2025"
+  },
+  {
+    "title": "Learning to clarify: Multi-turn conversations with Action-Based Contrastive Self-Training",
+    "url": "https://research.google/blog/learning-to-clarify-multi-turn-conversations-with-action-based-contrastive-self-training/",
+    "date": "June 3, 2025"
+  },
+  {
+    "title": "Fine-tuning LLMs with user-level differential privacy",
+    "url": "https://research.google/blog/fine-tuning-llms-with-user-level-differential-privacy/",
+    "date": "May 23, 2025"
+  },
+  {
+    "title": "Introducing Nested Learning: A new ML paradigm for continual learning",
+    "url": "https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/",
+    "date": "November 7, 2025"
+  },
+  {
+    "title": "Solving virtual machine puzzles: How AI is optimizing cloud computing",
+    "url": "https://research.google/blog/solving-virtual-machine-puzzles-how-ai-is-optimizing-cloud-computing/",
+    "date": "October 17, 2025"
+  },
+  {
+    "title": "Using AI to identify genetic variants in tumors with DeepSomatic",
+    "url": "https://research.google/blog/using-ai-to-identify-genetic-variants-in-tumors-with-deepsomatic/",
+    "date": "October 16, 2025"
+  },
+  {
+    "title": "Coral NPU: A full-stack platform for Edge AI",
+    "url": "https://research.google/blog/coral-npu-a-full-stack-platform-for-edge-ai/",
+    "date": "October 15, 2025"
+  },
+  {
+    "title": "XR Blocks: Accelerating AI + XR innovation",
+    "url": "https://research.google/blog/xr-blocks-accelerating-ai-xr-innovation/",
+    "date": "October 9, 2025"
+  },
+  {
+    "title": "​​Speech-to-Retrieval (S2R): A new approach to voice search",
+    "url": "https://research.google/blog/speech-to-retrieval-s2r-a-new-approach-to-voice-search/",
+    "date": "October 7, 2025"
+  },
+  {
+    "title": "A collaborative approach to image generation",
+    "url": "https://research.google/blog/a-collaborative-approach-to-image-generation/",
+    "date": "October 2, 2025"
+  },
+  {
+    "title": "Introducing interactive on-device segmentation in Snapseed",
+    "url": "https://research.google/blog/introducing-interactive-on-device-segmentation-in-snapseed/",
+    "date": "October 1, 2025"
+  },
+  {
+    "title": "AI as a research partner: Advancing theoretical computer science with AlphaEvolve",
+    "url": "https://research.google/blog/ai-as-a-research-partner-advancing-theoretical-computer-science-with-alphaevolve/",
+    "date": "September 30, 2025"
+  },
+  {
+    "title": "The anatomy of a personal health agent",
+    "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/",
+    "date": "September 30, 2025"
+  },
+  {
+    "title": "Towards better health conversations: Research insights on a “wayfinding” AI agent based on Gemini",
+    "url": "https://research.google/blog/towards-better-health-conversations-research-insights-on-a-wayfinding-ai-agent-based-on-gemini/",
+    "date": "September 25, 2025"
+  },
+  {
+    "title": "AfriMed-QA: Benchmarking large language models for global health",
+    "url": "https://research.google/blog/afrimed-qa-benchmarking-large-language-models-for-global-health/",
+    "date": "September 24, 2025"
+  },
+  {
+    "title": "Time series foundation models can be few-shot learners",
+    "url": "https://research.google/blog/time-series-foundation-models-can-be-few-shot-learners/",
+    "date": "September 23, 2025"
+  },
+  {
+    "title": "Introducing Nested Learning: A new ML paradigm for continual learning",
+    "url": "https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/",
+    "date": "November 7, 2025"
+  },
+  {
+    "title": "Deep researcher with test-time diffusion",
+    "url": "https://research.google/blog/deep-researcher-with-test-time-diffusion/",
+    "date": "September 19, 2025"
+  },
+  {
+    "title": "Sensible Agent: A framework for unobtrusive interaction with proactive AR agents",
+    "url": "https://research.google/blog/sensible-agent-a-framework-for-unobtrusive-interaction-with-proactive-ar-agents/",
+    "date": "September 18, 2025"
+  },
+  {
+    "title": "Making LLMs more accurate by using all of their layers",
+    "url": "https://research.google/blog/making-llms-more-accurate-by-using-all-of-their-layers/",
+    "date": "September 17, 2025"
+  },
+  {
+    "title": "Learn Your Way: Reimagining textbooks with generative AI",
+    "url": "https://research.google/blog/learn-your-way-reimagining-textbooks-with-generative-ai/",
+    "date": "September 16, 2025"
+  },
+  {
+    "title": "VaultGemma: The world's most capable differentially private LLM",
+    "url": "https://research.google/blog/vaultgemma-the-worlds-most-capable-differentially-private-llm/",
+    "date": "September 12, 2025"
+  },
+  {
+    "title": "Speculative cascades — A hybrid approach for smarter, faster LLM inference",
+    "url": "https://research.google/blog/speculative-cascades-a-hybrid-approach-for-smarter-faster-llm-inference/",
+    "date": "September 11, 2025"
+  },
+  {
+    "title": "Smarter nucleic acid design with NucleoBench and AdaBeam",
+    "url": "https://research.google/blog/smarter-nucleic-acid-design-with-nucleobench-and-adabeam/",
+    "date": "September 11, 2025"
+  },
+  {
+    "title": "Accelerating scientific discovery with AI-powered empirical software",
+    "url": "https://research.google/blog/accelerating-scientific-discovery-with-ai-powered-empirical-software/",
+    "date": "September 9, 2025"
+  },
+  {
+    "title": "How Google’s AI can help transform health professions education",
+    "url": "https://research.google/blog/how-googles-ai-can-help-transform-health-professions-education/",
+    "date": "August 27, 2025"
+  },
+  {
+    "title": "A scalable framework for evaluating health language models",
+    "url": "https://research.google/blog/a-scalable-framework-for-evaluating-health-language-models/",
+    "date": "August 26, 2025"
+  },
+  {
+    "title": "From massive models to mobile magic: The tech behind YouTube real-time generative AI effects",
+    "url": "https://research.google/blog/from-massive-models-to-mobile-magic-the-tech-behind-youtube-real-time-generative-ai-effects/",
+    "date": "August 21, 2025"
+  },
+  {
+    "title": "Securing private data at scale with differentially private partition selection",
+    "url": "https://research.google/blog/securing-private-data-at-scale-with-differentially-private-partition-selection/",
+    "date": "August 20, 2025"
+  }
+]
