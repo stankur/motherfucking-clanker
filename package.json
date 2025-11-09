@@ -1,0 +1,20 @@
+{
+  "name": "render-fetch",
+  "version": "1.0.0",
+  "main": "render-fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "rehype-cli": "^12.0.1",
+    "rehype-format": "^5.0.1"
+  },
+  "dependencies": {
+    "puppeteer": "^24.29.1"
+  },
+  "type": "module"
+}

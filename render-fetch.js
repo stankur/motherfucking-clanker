@@ -1,5 +1,18 @@
 // render-fetch.js
 import puppeteer from "puppeteer";
+import { unified } from "unified";
+import rehypeParse from "rehype-parse";
+import rehypeFormat from "rehype-format";
+import rehypeStringify from "rehype-stringify";
+
+async function formatHtml(html) {
+	const file = await unified()
+		.use(rehypeParse)
+		.use(rehypeFormat)
+		.use(rehypeStringify)
+		.process(html);
+	return String(file);
+}
 
 async function fetchRendered(url) {
 	const browser = await puppeteer.launch({
@@ -57,7 +70,7 @@ async function fetchRendered(url) {
 	}
 
 	// brief settle for last-minute lazy loads
-	await page.waitForTimeout(600);
+	await new Promise((resolve) => setTimeout(resolve, 600));
 	const finalHeight = await page.evaluate(
 		() => document.documentElement.scrollHeight
 	);
@@ -73,7 +86,7 @@ async function fetchRendered(url) {
 	const html = await page.content();
 
 	await browser.close();
-	return html;
+	return await formatHtml(html);
 }
 
 // Example usage
