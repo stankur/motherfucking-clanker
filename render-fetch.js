@@ -1,5 +1,7 @@
 // render-fetch.js
 import puppeteer from "puppeteer";
+import fs from "fs/promises";
+import path from "path";
 import { unified } from "unified";
 import rehypeParse from "rehype-parse";
 import rehypeFormat from "rehype-format";
@@ -14,7 +16,7 @@ async function formatHtml(html) {
 	return String(file);
 }
 
-async function fetchRendered(url) {
+export async function renderFetch(url) {
 	const browser = await puppeteer.launch({
 		headless: "new", // or true
 		// executablePath: '/path/to/chrome', // optional, if you want your own Chrome
@@ -89,18 +91,29 @@ async function fetchRendered(url) {
 	return await formatHtml(html);
 }
 
-// Example usage
-const url = process.argv[2];
-if (!url) {
-	console.error("Usage: node render-fetch.js <url>");
-	process.exit(1);
+export async function renderFetchToFile(url, outPath) {
+	const html = await renderFetch(url);
+	const absPath = path.isAbsolute(outPath)
+		? outPath
+		: path.resolve(process.cwd(), outPath);
+	await fs.mkdir(path.dirname(absPath), { recursive: true });
+	await fs.writeFile(absPath, html, "utf8");
+	return absPath;
 }
 
-fetchRendered(url)
-	.then((html) => {
-		console.log(html);
-	})
-	.catch((err) => {
-		console.error(err);
+// CLI usage (only when executed directly)
+if (import.meta.url === `file://${process.argv[1]}`) {
+	const url = process.argv[2];
+	if (!url) {
+		console.error("Usage: node render-fetch.js <url>");
 		process.exit(1);
-	});
+	}
+	renderFetch(url)
+		.then((html) => {
+			console.log(html);
+		})
+		.catch((err) => {
+			console.error(err);
+			process.exit(1);
+		});
+}
