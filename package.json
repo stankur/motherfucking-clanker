@@ -3,7 +3,11 @@
 	"version": "1.0.0",
 	"main": "render-fetch.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc && cp render-fetch.js dist/render-fetch.js",
+		"rf": "node dist/rf-cli.js",
+		"rf:html": "node dist/rf-cli.js",
+		"scrape": "node rf-scrape.js"
 	},
 	"keywords": [],
 	"author": "",
@@ -17,15 +21,10 @@
 		"typescript": "^5.9.3"
 	},
 	"dependencies": {
-		"puppeteer": "^24.29.1",
 		"@anthropic-ai/claude-agent-sdk": "*",
-		"dotenv": "^16.4.5"
+		"cheerio": "^1.1.2",
+		"dotenv": "^16.4.5",
+		"puppeteer": "^24.29.1"
 	},
-	"type": "module",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "tsc && cp render-fetch.js dist/render-fetch.js",
-		"rf": "node dist/rf-cli.js",
-		"rf:html": "node dist/rf-cli.js"
-	}
+	"type": "module"
 }

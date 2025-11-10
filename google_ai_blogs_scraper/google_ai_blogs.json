@@ -2,151 +2,151 @@
   {
     "title": "Announcing the Agent Development Kit for Go: Build Powerful AI Agents with Your Favorite Languages",
     "url": "https://developers.googleblog.com/en/announcing-the-agent-development-kit-for-go-build-powerful-ai-agents-with-your-favorite-languages/",
-    "date": "NOV. 7, 2025"
+    "date": "NOV. 7, 2025 / AI"
   },
   {
     "title": "Announcing User Simulation in ADK Evaluation",
     "url": "https://developers.googleblog.com/en/announcing-user-simulation-in-adk-evaluation/",
-    "date": "NOV. 7, 2025"
+    "date": "NOV. 7, 2025 / AI"
   },
   {
     "title": "Agent Garden - Samples for learning, discovering and building",
     "url": "https://developers.googleblog.com/en/agent-garden-samples-for-learning-discovering-and-building/",
-    "date": "NOV. 4, 2025"
+    "date": "NOV. 4, 2025 / AI"
   },
   {
     "title": "Beyond Request-Response: Architecting Real-time Bidirectional Streaming Multi-agent System",
     "url": "https://developers.googleblog.com/en/beyond-request-response-architecting-real-time-bidirectional-streaming-multi-agent-system/",
-    "date": "OCT. 30, 2025"
+    "date": "OCT. 30, 2025 / AI"
   },
   {
     "title": "Introducing the Jules extension for Gemini CLI",
     "url": "https://developers.googleblog.com/en/introducing-the-jules-extension-for-gemini-cli/",
-    "date": "OCT. 29, 2025"
+    "date": "OCT. 29, 2025 / AI"
   },
   {
     "title": "Introducing Coral NPU: A full-stack platform for Edge AI",
     "url": "https://developers.googleblog.com/en/introducing-coral-npu-a-full-stack-platform-for-edge-ai/",
-    "date": "OCT. 15, 2025"
+    "date": "OCT. 15, 2025 / AI"
   },
   {
     "title": "Introducing Veo 3.1 and new creative capabilities in the Gemini API",
     "url": "https://developers.googleblog.com/en/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/",
-    "date": "OCT. 15, 2025"
+    "date": "OCT. 15, 2025 / AI"
   },
   {
     "title": "Say hello to a new level of interactivity in Gemini CLI",
     "url": "https://developers.googleblog.com/en/say-hello-to-a-new-level-of-interactivity-in-gemini-cli/",
-    "date": "OCT. 15, 2025"
+    "date": "OCT. 15, 2025 / AI"
   },
   {
     "title": "Own your AI: Learn how to fine-tune Gemma 3 270M and run it on-device",
     "url": "https://developers.googleblog.com/en/own-your-ai-fine-tune-gemma-3-270m-for-on-device/",
-    "date": "OCT. 8, 2025"
+    "date": "OCT. 8, 2025 / Web"
   },
   {
     "title": "Announcing the Genkit Extension for Gemini CLI",
     "url": "https://developers.googleblog.com/en/announcing-the-genkit-extension-for-gemini-cli/",
-    "date": "OCT. 8, 2025"
+    "date": "OCT. 8, 2025 / AI"
   },
   {
     "title": "Building High-Performance Data Pipelines with Grain and ArrayRecord",
     "url": "https://developers.googleblog.com/en/building-high-performance-data-pipelines-with-grain-and-arrayrecord/",
-    "date": "OCT. 7, 2025"
+    "date": "OCT. 7, 2025 / AI"
   },
   {
     "title": "Level Up Your Dev Game: The Jules API is Here!",
     "url": "https://developers.googleblog.com/en/level-up-your-dev-game-the-jules-api-is-here/",
-    "date": "OCT. 3, 2025"
+    "date": "OCT. 3, 2025 / AI"
   },
   {
     "title": "Meet Jules Tools: A Command Line Companion for Google’s Async Coding Agent",
     "url": "https://developers.googleblog.com/en/meet-jules-tools-a-command-line-companion-for-googles-async-coding-agent/",
-    "date": "OCT. 2, 2025"
+    "date": "OCT. 2, 2025 / AI"
   },
   {
     "title": "Gemini 2.5 Flash Image now ready for production with new aspect ratios",
     "url": "https://developers.googleblog.com/en/gemini-2-5-flash-image-now-ready-for-production-with-new-aspect-ratios/",
-    "date": "OCT. 2, 2025"
+    "date": "OCT. 2, 2025 / AI"
   },
   {
     "title": "Unlocking Multi-Spectral Data with Gemini",
     "url": "https://developers.googleblog.com/en/unlocking-multi-spectral-data-with-gemini/",
-    "date": "OCT. 1, 2025"
+    "date": "OCT. 1, 2025 / AI"
   },
   {
     "title": "Gemini for Home: Expanding the Platform for a New Era of Smart Home AI",
     "url": "https://developers.googleblog.com/en/gemini-for-home-expanding-the-platform-for-a-new-era-of-smart-home-ai/",
-    "date": "OCT. 1, 2025"
+    "date": "OCT. 1, 2025 / AI"
   },
   {
     "title": "Introducing Tunix: A JAX-Native Library for LLM Post-Training",
     "url": "https://developers.googleblog.com/en/introducing-tunix-a-jax-native-library-for-llm-post-training/",
-    "date": "SEPT. 30, 2025"
+    "date": "SEPT. 30, 2025 / AI"
   },
   {
     "title": "Gemma explained: EmbeddingGemma Architecture and Recipe",
     "url": "https://developers.googleblog.com/en/gemma-explained-embeddinggemma-architecture-and-recipe/",
-    "date": "SEPT. 29, 2025"
+    "date": "SEPT. 29, 2025 / AI"
   },
   {
     "title": "Apigee Operator for Kubernetes and GKE Inference Gateway integration for Auth and AI/LLM policies",
     "url": "https://developers.googleblog.com/en/apigee-operator-for-kubernetes-and-gke-inference-gateway-integration-for-auth-and-aillm-policies/",
-    "date": "SEPT. 26, 2025"
+    "date": "SEPT. 26, 2025 / AI"
   },
   {
     "title": "Delight users by combining ADK Agents with Fancy Frontends using AG-UI",
     "url": "https://developers.googleblog.com/en/delight-users-by-combining-adk-agents-with-fancy-frontends-using-ag-ui/",
-    "date": "SEPT. 26, 2025"
+    "date": "SEPT. 26, 2025 / AI"
   },
   {
     "title": "Your AI is now a local expert: Grounding with Google Maps is now GA",
     "url": "https://developers.googleblog.com/en/your-ai-is-now-a-local-expert-grounding-with-google-maps-is-now-ga/",
-    "date": "SEPT. 26, 2025"
+    "date": "SEPT. 26, 2025 / AI"
   },
   {
     "title": "Building the Next Generation of Physical Agents with Gemini Robotics-ER 1.5",
     "url": "https://developers.googleblog.com/en/building-the-next-generation-of-physical-agents-with-gemini-robotics-er-15/",
-    "date": "SEPT. 25, 2025"
+    "date": "SEPT. 25, 2025 / AI"
   },
   {
     "title": "Continuing to bring you our latest models, with an improved Gemini 2.5 Flash and Flash-Lite release",
     "url": "https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/",
-    "date": "SEPT. 25, 2025"
+    "date": "SEPT. 25, 2025 / AI"
   },
   {
     "title": "On-device GenAI in Chrome, Chromebook Plus, and Pixel Watch with LiteRT-LM",
     "url": "https://developers.googleblog.com/en/on-device-genai-in-chrome-chromebook-plus-and-pixel-watch-with-litert-lm/",
-    "date": "SEPT. 24, 2025"
+    "date": "SEPT. 24, 2025 / Mobile"
   },
   {
     "title": "Introducing the Data Commons Model Context Protocol (MCP) Server: Streamlining Public Data Access for AI Developers",
     "url": "https://developers.googleblog.com/en/datacommonsmcp/",
-    "date": "SEPT. 24, 2025"
+    "date": "SEPT. 24, 2025 / AI"
   },
   {
     "title": "Gemini CLI 🤝 FastMCP: Simplifying MCP server development",
     "url": "https://developers.googleblog.com/en/gemini-cli-fastmcp-simplifying-mcp-server-development/",
-    "date": "SEPT. 22, 2025"
+    "date": "SEPT. 22, 2025 / AI"
   },
   {
     "title": "ADK for Java opening up to third-party language models via LangChain4j integration",
     "url": "https://developers.googleblog.com/en/adk-for-java-opening-up-to-third-party-language-models-via-langchain4j-integration/",
-    "date": "SEPT. 16, 2025"
+    "date": "SEPT. 16, 2025 / AI"
   },
   {
     "title": "Gemini Batch API now supports Embeddings and OpenAI Compatibility",
     "url": "https://developers.googleblog.com/en/gemini-batch-api-now-supports-embeddings-and-openai-compatibility/",
-    "date": "SEPT. 10, 2025"
+    "date": "SEPT. 10, 2025 / AI"
   },
   {
     "title": "Announcing Genkit Go 1.0 and Enhanced AI-Assisted Development",
     "url": "https://developers.googleblog.com/en/announcing-genkit-go-10-and-enhanced-ai-assisted-development/",
-    "date": "SEPT. 10, 2025"
+    "date": "SEPT. 10, 2025 / AI"
   },
   {
     "title": "Beyond backpropagation: JAX's symbolic power unlocks new frontiers in scientific computing",
     "url": "https://developers.googleblog.com/en/jax-symbolic-power-unlocks-new-frontiers-in-scientific-computing/",
-    "date": "SEPT. 9, 2025"
+    "date": "SEPT. 9, 2025 / AI"
   }
 ]

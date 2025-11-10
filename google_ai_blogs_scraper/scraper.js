@@ -1,91 +1,78 @@
 import * as cheerio from 'cheerio';
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { renderFetch } from '../render-fetch.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const SEED_URL = 'https://developers.googleblog.com/en/search/?technology_categories=AI';
 
-async function scrapeGoogleAIBlogs() {
-  const sourceFile = path.join(__dirname, '..', 'google_ai_blogs.html');
-  const outputFile = path.join(__dirname, 'google_ai_blogs.json');
+/**
+ * Scrapes Google AI blog posts
+ * @param {Object} options
+ * @param {number} options.maxPages - Maximum number of pages to scrape (default: 1)
+ * @returns {Promise<Array<{title: string, url: string, date: string}>>}
+ */
+export async function scrape({ maxPages = 1 } = {}) {
+  const allArticles = [];
+  let currentUrl = SEED_URL;
+  let pageCount = 0;
 
-  let allBlogs = [];
+  while (currentUrl && pageCount < maxPages) {
+    pageCount++;
+    console.error(`Scraping page ${pageCount}: ${currentUrl}`);
 
-  console.error('Loading HTML file...');
-  const html = await fs.readFile(sourceFile, 'utf8');
-  const $ = cheerio.load(html);
+    // Fetch HTML in-memory
+    const html = await renderFetch(currentUrl);
+    const $ = cheerio.load(html);
 
-  console.error('Extracting blog entries...');
+    // Extract articles from current page
+    const articles = [];
+    $('.search-result').each((i, elem) => {
+      const titleElem = $(elem).find('.search-result__title a');
+      const dateElem = $(elem).find('.search-result__eyebrow');
 
-  // Find all search result containers
-  const results = $('.search-result');
-  console.error(`Found ${results.length} search results`);
+      const title = titleElem.text().trim();
+      const url = titleElem.attr('href');
+      const date = dateElem.text().trim();
 
-  results.each((i, element) => {
-    const $element = $(element);
-
-    // Extract date from eyebrow
-    const eyebrow = $element.find('.search-result__eyebrow').text().trim();
-    let date = null;
-    if (eyebrow) {
-      // Format: "NOV. 7, 2025 / AI" -> extract date part
-      const parts = eyebrow.split(' / ');
-      if (parts.length > 0) {
-        date = parts[0].trim();
-      }
-    }
-
-    // Extract title and URL
-    const $titleLink = $element.find('.search-result__title a');
-    const title = $titleLink.text().trim() || null;
-    const url = $titleLink.attr('href') || null;
-
-    allBlogs.push({
-      title,
-      url,
-      date
+      articles.push({ title, url, date });
     });
 
-    // Debug output for first few entries
-    if (i < 3) {
-      console.error(`Entry ${i + 1}:`, { title: title?.substring(0, 50), url, date });
-    }
-  });
+    allArticles.push(...articles);
+    console.error(`  Found ${articles.length} articles on page ${pageCount}`);
 
-  // Write to JSON file
-  await fs.writeFile(outputFile, JSON.stringify(allBlogs, null, 2));
-  console.error(`\n✓ Scraped ${allBlogs.length} blog entries`);
-  console.error(`✓ Output saved to: ${outputFile}`);
+    // Get next page URL if we need more pages
+    if (pageCount < maxPages) {
+      const nextPageLink = $('.nav-buttons__right a[aria-label="Next"]');
+      const isDisabled = nextPageLink.hasClass('disabled');
 
-  // Check for null values
-  const nullTitles = allBlogs.filter(b => !b.title).length;
-  const nullUrls = allBlogs.filter(b => !b.url).length;
-  const nullDates = allBlogs.filter(b => !b.date).length;
+      if (!isDisabled && nextPageLink.attr('href')) {
+        currentUrl = nextPageLink.attr('href');
 
-  console.error('\n=== Data Quality Check ===');
-  console.error(`Total entries: ${allBlogs.length}`);
-  console.error(`Entries with null title: ${nullTitles}`);
-  console.error(`Entries with null url: ${nullUrls}`);
-  console.error(`Entries with null date: ${nullDates}`);
-
-  if (nullTitles > 0 || nullUrls > 0 || nullDates > 0) {
-    console.error('\n⚠️ WARNING: Found null values!');
-    // Show which entries have nulls
-    allBlogs.forEach((blog, idx) => {
-      if (!blog.title || !blog.url || !blog.date) {
-        console.error(`Entry ${idx}: title=${!!blog.title}, url=${!!blog.url}, date=${!!blog.date}`);
+        // Ensure absolute URL
+        if (currentUrl && !currentUrl.startsWith('http')) {
+          currentUrl = `https://developers.googleblog.com${currentUrl}`;
+        }
+      } else {
+        // No more pages
+        currentUrl = null;
       }
-    });
-  } else {
-    console.error('✓ All entries have complete data');
+    } else {
+      currentUrl = null;
+    }
   }
 
-  return allBlogs;
-}
+  // Validation: ensure all items have required fields
+  const invalid = allArticles.filter(item => !item.title || !item.url || !item.date);
 
-// Run the scraper
-scrapeGoogleAIBlogs().catch(err => {
-  console.error('Error:', err);
-  process.exit(1);
-});
+  if (invalid.length > 0) {
+    if (invalid.length === allArticles.length) {
+      throw new Error(`All ${allArticles.length} items are missing required fields. Selectors may be incorrect.`);
+    } else {
+      throw new Error(`${invalid.length} out of ${allArticles.length} items are missing required fields (title/url/date).`);
+    }
+  }
+
+  if (allArticles.length === 0) {
+    throw new Error('No articles found. The page structure may have changed.');
+  }
+
+  return allArticles;
+}
