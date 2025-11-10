@@ -1,20 +1,31 @@
 {
-  "name": "render-fetch",
-  "version": "1.0.0",
-  "main": "render-fetch.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "rehype-cli": "^12.0.1",
-    "rehype-format": "^5.0.1"
-  },
-  "dependencies": {
-    "puppeteer": "^24.29.1"
-  },
-  "type": "module"
+	"name": "render-fetch",
+	"version": "1.0.0",
+	"main": "render-fetch.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/node": "^24.10.0",
+		"rehype-cli": "^12.0.1",
+		"rehype-format": "^5.0.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"puppeteer": "^24.29.1",
+		"@anthropic-ai/claude-agent-sdk": "*",
+		"dotenv": "^16.4.5"
+	},
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc && cp render-fetch.js dist/render-fetch.js",
+		"rf": "node dist/rf-cli.js",
+		"rf:html": "node dist/rf-cli.js"
+	}
 }

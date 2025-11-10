@@ -1,1 +1,4 @@
 node_modules
+dist
+.env
+google_ai_blogs_scraper
